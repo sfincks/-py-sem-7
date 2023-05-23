@@ -15,3 +15,15 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
 
+
+
+def print_operation_table(operation, row, col):
+    for i in range(1,row+1):
+        print()
+        for j in range(1,col+1):
+            print(operation(i, j),sep="  ", end=" ")
+            
+print_operation_table(lambda x, y: x*y, 6,6)
+
+
+    
